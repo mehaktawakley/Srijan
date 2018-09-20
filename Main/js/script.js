@@ -29,3 +29,41 @@ $(function () {
     }
   });
 })
+
+$(function () {
+
+  $(window).scroll(function(){
+    if( $(window).scrollTop() > 2200 ) {
+
+      $("#team-members").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+      });
+    }
+  });
+});
+
+$(function () {
+
+  $('#slider-work').owlCarousel({
+    items: 1,
+    autoplay: true,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+  });
+});
+
+$(function () {
+
+  $('#works-tabs').responsiveTabs({
+      animation: 'slide'
+  });
+
+});
