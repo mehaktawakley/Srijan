@@ -37,6 +37,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1111;
 }
 
 .navbar {
@@ -172,6 +173,11 @@ ul.navbar-nav > li > a:focus {
 #home-heading-1 {
   font-family: SAMARN;
   font-size: 72px;
+}
+
+#home-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn-general {
@@ -645,4 +651,128 @@ footer p span {
   font-size: 20px;
   color: #3399FF;
   font-family: SAMARN;
+}
+
+#thover{
+  position:fixed;
+  width:100%;
+  height:100%;
+  opacity: .6
+}
+
+#tpopup{
+  position: relative;
+  width: 40%;
+  top: 4%;
+  background:#fff;
+  border-radius:5px;
+  margin: auto;
+  text-align:center;
+  box-shadow:0 0 10px 0 #000;
+  z-index: 1111111;
+}
+#tclose{
+  position:absolute;
+  background:black;
+  color:white;
+  right:-15px;
+  top:-15px;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  font-size:8px;
+  font-weight:bold;
+  font-family:'Arial Black', Arial, sans-serif;
+  cursor:pointer;
+  box-shadow:0 0 10px 0 #000;
+}
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+#mobile-nav-open-btn {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right:25px;
+  top: 15px;
+  display: none;
+}
+
+
+.white-nav-top #mobile-nav-open-btn {
+  color: #3399FF;
+}
+
+#mobile-nav {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
+  color: #212226;
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+  right: 19px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 3;
+}
+
+#mobile-nav-content {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  top: 10%;
+}
+
+#mobile-nav ul li {
+  margin-bottom:20px;
+}
+
+#mobile-nav a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #212226;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+  color:#3399FF;
+  background: none;
+}
+
+@media (max-width: 1130px) {
+  #mobile-nav-open-btn {
+    display: block;
+  }
+  .navbar-nav {
+    display: none;
+  }
 }

@@ -67,3 +67,28 @@ $(function () {
   });
 
 });
+
+$(document).ready(function(){
+
+  $("#thover").click(function(){
+		$(this).fadeOut();
+    $("#tpopup").fadeOut();
+	});
+
+
+  $("#tclose").click(function(){
+		$("#thover").fadeOut();
+    $("#tpopup").fadeOut();
+	});
+
+});
+
+$(function () {
+  $("#mobile-nav-open-btn").click(function() {
+    $("#mobile-nav").css("height", "100%");
+  });
+
+  $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
+    $("#mobile-nav").css("height", "0%");
+  });
+});
